@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.magic-radio {  
+  position: absolute;  
+  display: none; }  
+  
+  
+  
+.magic-radio + label {  
+  position: relative;  
+  padding-left: 30px;  
+  cursor: pointer;  
+  vertical-align: middle; }  
+  .magic-radio + label:hover:before {  
+    animation-duration: 0.4s;  
+    animation-fill-mode: both;  
+    animation-name: hover-color; }  
+  .magic-radio + label.radio1:before {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    display: inline-block;  
+    width: 20px;  
+    height: 20px;  
+    content: '';  
+    border: 2px solid green; }  
+    .magic-radio + label.radio2:before {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    display: inline-block;  
+    width: 20px;  
+    height: 20px;  
+    content: '';  
+    border: 2px solid #C30C22; }  
+    .magic-radio + label.radio3:before {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    display: inline-block;  
+    width: 20px;  
+    height: 20px;  
+    content: '';  
+    border: 2px solid #868686; }  
+    .magic-radio + label.radio4:before {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    display: inline-block;  
+    width: 20px;  
+    height: 20px;  
+    content: '';  
+    border: 2px solid blue; } 
+  .magic-radio + label:after {  
+    position: absolute;  
+    display: none;  
+    content: ''; }  
+  
+.magic-radio[disabled] + label {  
+  cursor: not-allowed;  
+  color: #e4e4e4; }  
+ .magic-radio:checked + label:before {  
+  animation-name: none; }  
+  
+.magic-radio:checked + label:after {  
+  display: block; }  
+  
+.magic-radio + label:before {  
+  border-radius: 50%; } 
+  
+   
+.magic-radio + label.radio1:after {  
+  top: 6px;  
+  left: 6px;  
+  width: 12px;  
+  height: 12px;  
+  border-radius: 50%;  
+  background: #478846; }  
+  
+.magic-radio + label.radio2:after {  
+  top: 6px;  
+  left: 6px;  
+  width: 12px;  
+  height: 12px;  
+  border-radius: 50%;  
+  background: red; }  
+.magic-radio + label.radio3:after {  
+  top: 6px;  
+  left: 6px;  
+  width: 12px;  
+  height: 12px;  
+  border-radius: 50%;  
+  background: #868686; }
+  .magic-radio + label.radio4:after {  
+  top: 6px;  
+  left: 6px;  
+  width: 12px;  
+  height: 12px;  
+  border-radius: 50%;  
+  background: blue; }
+  
+  
+  
+  
+  
